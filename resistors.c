@@ -99,7 +99,7 @@ uint8_t check_for_resistors(ResistorCheckResult* result) {
                         && (resistor[0].resistance > resistor[1].resistance);
                 uint8_t isResistor2CombinationOfResistors = (resistor[1]
                         .resistance > resistor[2].resistance)
-                        && (resistor[1].resistance > resistor[0].resistance)
+                        && (resistor[1].resistance > resistor[0].resistance);
                 if (isResistor1CombinationOfResistors) {
                     result->resistor[0] = resistor[2];
                 } else if (isResistor2CombinationOfResistors) {
